@@ -3,79 +3,55 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#0b0d12">
-  <meta name="description" content="Mahsun Karaca — oyunlar, yayınlar ve tüm sosyal hesaplarım tek yerde.">
-  <title>Mahsun Karaca · Oyuna katıl</title>
+  <meta name="theme-color" content="#151714">
+  <meta name="description" content="Ben Sana İnanıyorum filmi için bilet ön satış duyuruları ve gösterim bilgileri.">
+  <title>Ben Sana İnanıyorum · Bilet Ön Satış</title>
   <style>
-    :root { color-scheme: dark; --bg:#0b0d12; --text:#f1f3f7; --muted:#858b9b; --lime:#c3ff5d; }
-    * { box-sizing:border-box; }
-    body { margin:0; background:var(--bg); color:var(--text); font-family:Arial,Helvetica,sans-serif; min-height:100vh; }
-    body::before { content:""; position:fixed; inset:0; pointer-events:none; background:radial-gradient(ellipse at 50% 0%,#c3ff5d0d,transparent 52%),linear-gradient(#ffffff03 1px,transparent 1px),linear-gradient(90deg,#ffffff03 1px,transparent 1px); background-size:auto,48px 48px,48px 48px; }
-    main { position:relative; width:min(100% - 40px,480px); margin:0 auto; padding:36px 0 24px; }
-    .topline { display:flex; justify-content:space-between; align-items:center; font-family:monospace; font-size:10px; letter-spacing:2px; color:var(--muted); }
-    .mark { color:var(--lime); font-weight:700; font-size:14px; letter-spacing:-1px; }
-    header { text-align:center; padding:46px 0 30px; }
-    .avatar { width:94px; height:94px; margin:0 auto 23px; border:1px solid #c3ff5d66; border-radius:28px; background:linear-gradient(145deg,#293522,#131a13); display:grid; place-items:center; position:relative; box-shadow:0 0 45px #c3ff5d0b; }
-    .avatar span { font-size:35px; font-weight:900; letter-spacing:-4px; padding-right:4px; color:var(--lime); transform:skew(-9deg); }
-    .avatar::after { content:"✦"; position:absolute; right:-9px; bottom:-7px; width:27px; height:27px; border:4px solid var(--bg); background:var(--lime); color:#10150a; border-radius:50%; font-size:15px; display:grid; place-items:center; }
-    .eyebrow { color:var(--lime); font-family:monospace; font-size:10px; letter-spacing:3px; text-transform:uppercase; }
-    h1 { font-size:clamp(30px,7vw,39px); letter-spacing:-1.8px; margin:12px 0 10px; }
-    .bio { color:#a1a7b5; font-size:14px; line-height:1.7; margin:0; }
-    .tags { display:flex; justify-content:center; gap:7px; margin-top:19px; }
-    .tag { padding:5px 9px; border:1px solid #282c35; border-radius:5px; color:#a1a7b5; font-family:monospace; font-size:10px; }
-    .section-label { display:flex; justify-content:space-between; margin:13px 0 12px; color:var(--muted); font-family:monospace; font-size:10px; letter-spacing:1.6px; }
-    .links { display:grid; gap:10px; }
-    .link { display:flex; align-items:center; gap:15px; width:100%; padding:17px; text-align:left; border:1px solid #292d36; border-radius:13px; background:#14171ee8; color:var(--text); font:inherit; opacity:1; }
-    .link.featured { background:linear-gradient(110deg,#222d19,#171d14); border-color:#c3ff5d45; }
-    .icon { display:grid; place-items:center; flex:0 0 42px; height:42px; border-radius:10px; background:#ffffff06; color:var(--accent); }
-    svg { width:23px; height:23px; fill:none; stroke:currentColor; stroke-width:1.7; stroke-linecap:round; stroke-linejoin:round; }
-    .copy { flex:1; }
-    .copy strong { display:block; font-size:14px; font-weight:600; }
-    .copy small { display:block; margin-top:5px; font-size:11px; color:var(--muted); }
-    .soon { font-family:monospace; font-size:9px; letter-spacing:1px; color:#a2a897; padding:5px 7px; border:1px solid #ffffff12; border-radius:4px; }
-    .note { display:flex; align-items:center; justify-content:center; gap:8px; margin:23px 0 0; color:var(--muted); font-size:11px; }
-    .dot { width:5px; height:5px; border-radius:50%; background:var(--lime); }
-    footer { margin-top:38px; padding-top:20px; border-top:1px solid #ffffff0b; display:flex; justify-content:space-between; font-family:monospace; font-size:9px; letter-spacing:1px; color:#656b78; }
-    footer span:last-child { color:var(--lime); }
-    @media (max-width:360px) { main { width:calc(100% - 28px); } .link { padding:13px; gap:10px; } .soon { font-size:8px; } }
+    :root{color-scheme:dark;--bg:#151714;--paper:#f1eddf;--muted:#a6a99c;--accent:#e0bc76;--line:#f1eddf24}
+    *{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:24px}body{margin:0;background:var(--bg);color:var(--paper);font-family:Arial,Helvetica,sans-serif}a{color:inherit;text-decoration:none}a:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-offset:6px}
+    .wrap{width:min(1180px,calc(100% - 64px));margin:auto}nav{display:flex;justify-content:space-between;align-items:center;gap:24px;padding:27px 0;border-bottom:1px solid var(--line)}.brand{font-size:12px;font-weight:700;letter-spacing:2px}.nav-link{font-size:11px;letter-spacing:1.5px;color:var(--accent)}.nav-link span{margin-left:18px}
+    .hero{display:grid;grid-template-columns:1.12fr 1fr;gap:70px;align-items:center;padding:70px 0 76px}.eyebrow{font-size:10px;letter-spacing:3px;color:var(--accent);display:flex;align-items:center;gap:12px}.eyebrow:before{content:"";width:28px;height:1px;background:var(--accent)}h1{font-family:Georgia,'Times New Roman',serif;font-weight:400;font-size:clamp(64px,7.2vw,104px);line-height:.99;letter-spacing:-4px;margin:31px 0}h1 em{font-weight:400;color:var(--accent)}.intro{font-size:15px;color:var(--muted);line-height:1.8;max-width:370px}.cta{display:inline-flex;align-items:center;justify-content:space-between;gap:35px;background:var(--accent);color:#24251c;padding:19px 23px;margin-top:22px;font-size:12px;font-weight:700}.cta:hover{background:#efd09a}.caption{margin-top:17px;color:var(--muted);font-size:11px}.hero-meta{margin-top:48px;display:flex;gap:30px;font-size:10px;letter-spacing:1.5px}.hero-meta span+span{border-left:1px solid var(--line);padding-left:30px;color:var(--muted)}
+    .poster{aspect-ratio:4/5;position:relative;overflow:hidden;background:radial-gradient(ellipse at 54% 29%,#f6dba27d,transparent 31%),linear-gradient(165deg,#b6ae8c 0%,#727b68 37%,#354b46 64%,#1b302d 100%);box-shadow:0 28px 65px #0004;border:1px solid #ffffff12;display:flex;flex-direction:column;align-items:center;justify-content:space-between;padding:30px;text-align:center}.poster:before{content:"";position:absolute;width:155%;height:65%;background:linear-gradient(155deg,#637766,#203e37);border-radius:50%;transform:rotate(-19deg);left:-45%;bottom:-20%;box-shadow:100px -34px 90px #273d3477}.poster:after{content:"";position:absolute;inset:0;background:repeating-linear-gradient(0deg,transparent 0px,transparent 2px,#00000008 3px);pointer-events:none}.poster-label,.poster-bottom{position:relative;z-index:1;font-size:9px;letter-spacing:3px}.poster-center{position:relative;z-index:1;margin-top:60px}.poster-title{font-family:Georgia,serif;font-size:clamp(40px,5vw,66px);font-weight:400;line-height:1.08;letter-spacing:-2px;text-shadow:0 2px 30px #0003}.poster-title em{color:#f4d9a2}.poster-rule{width:30px;height:1px;background:#eeddb4;margin:24px auto}.poster-sub{font-size:9px;letter-spacing:3px}.poster-bottom{line-height:2;color:#d9dfcd}.poster-note{font-size:10px;color:var(--muted);margin:12px 0 0;text-align:right}
+    .ticket-section{border-top:1px solid var(--line);padding:52px 0 65px}.section-top{display:flex;justify-content:space-between;align-items:end;gap:24px;margin-bottom:30px}.number{font-size:10px;color:var(--accent);letter-spacing:2px}h2{font-family:Georgia,serif;font-size:36px;font-weight:400;letter-spacing:-1px;margin:13px 0 0}.section-top>p{font-size:12px;line-height:1.8;color:var(--muted);max-width:310px;margin:0}.ticket{border:1px solid var(--line);display:grid;grid-template-columns:1fr 1fr 1fr auto;align-items:center;padding:28px;gap:25px;background:#ffffff03}.field-label{display:block;font-size:9px;letter-spacing:2px;color:var(--muted);margin-bottom:13px}.field-value{font-size:14px}.status{display:inline-flex;align-items:center;gap:7px;color:var(--accent);font-size:11px}.dot{width:5px;height:5px;border-radius:50%;background:var(--accent)}button{font:inherit;font-size:11px;padding:16px 21px;border:1px solid #e0bc764a;background:#e0bc7609;color:#c6b48f;cursor:not-allowed}.sale-note{font-size:11px;line-height:1.8;color:var(--muted);margin:17px 0 0}.bottom{display:flex;justify-content:space-between;align-items:center;gap:20px;border-top:1px solid var(--line);padding:25px 0 30px;font-size:9px;letter-spacing:1.5px;color:var(--muted)}.bottom a{color:var(--paper)}
+    @media(max-width:800px){.hero{gap:30px;padding:45px 0}h1{font-size:70px}.ticket{grid-template-columns:1fr 1fr}.ticket button{width:100%}.hero-meta{gap:15px}.hero-meta span+span{padding-left:15px}}
+    @media(max-width:580px){.wrap{width:calc(100% - 40px)}nav{padding:23px 0}.brand{font-size:10px;letter-spacing:1px}.nav-link{font-size:9px;letter-spacing:1px}.nav-link span{margin-left:8px}.hero{grid-template-columns:1fr;gap:40px;padding-top:40px}h1{font-size:clamp(64px,16vw,90px);letter-spacing:-3px;margin:25px 0}.intro{font-size:14px}.hero-meta{margin-top:30px}.poster{max-width:390px;margin:auto;width:100%}.poster-title{font-size:55px}.poster-center{margin-top:30px}.section-top{display:block}.section-top>p{margin-top:18px}h2{font-size:32px}.ticket{padding:22px;gap:28px 16px}.field-value{font-size:13px}.bottom{align-items:start;line-height:1.7}.bottom span{max-width:170px}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
   </style>
 </head>
 <body>
-  <main>
-    <div class="topline"><span class="mark">MK<span style="color:#747b69"> /</span></span><span>PLAYER PROFILE · 01</span></div>
-    <header>
-      <div class="avatar" aria-hidden="true"><span>MK</span></div>
-      <div class="eyebrow">Bir sonraki seviyeye</div>
-      <h1>Mahsun Karaca</h1>
-      <p class="bio">Oyun, sohbet ve biraz rekabet.<br>Takıma katıl, hikâyenin bir parçası ol.</p>
-      <div class="tags"><span class="tag">GAMER</span><span class="tag">GG / WP</span><span class="tag">TR</span></div>
-    </header>
-    <div class="section-label"><span>BAĞLANTILAR</span><span>05 SLOTS</span></div>
-    <!-- Gerçek adresler hazır olduğunda butonları href içeren bağlantılara dönüştürün. -->
-    <section class="links" aria-label="Sosyal medya bağlantıları">
-      <button type="button" class="link featured" disabled style="--accent:#c3ff5d">
-        <span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 3h16v12l-5 5h-5l-4 3v-3H3V7z"/><path d="M10 7v6m6-6v6"/></svg></span>
-        <span class="copy"><strong>Twitch</strong><small>Bir sonraki yayında buluşalım.</small></span><span class="soon">YAKINDA</span>
-      </button>
-      <button type="button" class="link" disabled style="--accent:#ff7070">
-        <span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="2" y="5" width="20" height="14" rx="4"/><path d="m10 9 5 3-5 3z"/></svg></span>
-        <span class="copy"><strong>YouTube</strong><small>En iyi anlar, tek bir yerde.</small></span><span class="soon">YAKINDA</span>
-      </button>
-      <button type="button" class="link" disabled style="--accent:#a7a0ff">
-        <span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="m8 5-3 1-3 12 5 2 2-3h6l2 3 5-2-3-12-3-1-1 2H9z"/><circle cx="8" cy="12" r="1"/><circle cx="16" cy="12" r="1"/><path d="M9 16h6"/></svg></span>
-        <span class="copy"><strong>Discord</strong><small>Ekibin buluşma noktası.</small></span><span class="soon">YAKINDA</span>
-      </button>
-      <button type="button" class="link" disabled style="--accent:#f0a2cf">
-        <span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><path d="M17.5 6.5h.01"/></svg></span>
-        <span class="copy"><strong>Instagram</strong><small>Oyunun dışındaki hayat.</small></span><span class="soon">YAKINDA</span>
-      </button>
-      <button type="button" class="link" disabled style="--accent:#7de2e2">
-        <span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M14 3v12a4 4 0 1 1-4-4M14 3c1 4 3 5 6 5M17 5v11a7 7 0 1 1-7-7"/></svg></span>
-        <span class="copy"><strong>TikTok</strong><small>Kısa klipler, büyük anlar.</small></span><span class="soon">YAKINDA</span>
-      </button>
-    </section>
-    <p class="note"><span class="dot" aria-hidden="true"></span>Bağlantılar çok yakında burada.</p>
-    <footer><span>© MAHSUN KARACA</span><span>GL HF ↗</span></footer>
-  </main>
+  <div class="wrap">
+    <nav aria-label="Ana gezinme"><a href="#" class="brand">BEN SANA İNANIYORUM</a><a class="nav-link" href="#biletler">BİLET ÖN SATIŞ <span aria-hidden="true">↗</span></a></nav>
+    <main>
+      <section class="hero" aria-labelledby="film-title">
+        <div>
+          <div class="eyebrow">BEYAZ PERDEDE BULUŞALIM</div>
+          <h1 id="film-title">Ben Sana<br><em>İnanıyorum.</em></h1>
+          <p class="intro">Bazı hikâyeler birlikte izlenir.<br>Sinema salonunda yerini almak için ön satış duyurularını buradan takip et.</p>
+          <a href="#biletler" class="cta">Bilet bilgilerini keşfet <span aria-hidden="true">↗</span></a>
+          <p class="caption">Ön satış tarihi yakında açıklanacak.</p>
+          <div class="hero-meta"><span>BİR SİNEMA BULUŞMASI</span><span>BÜYÜK PERDEDE</span></div>
+        </div>
+        <div>
+          <div class="poster" role="img" aria-label="Ben Sana İnanıyorum: yeşil ve altın tonlarda tipografik film görseli">
+            <span class="poster-label">BİR SİNEMA BULUŞMASI</span>
+            <div class="poster-center"><div class="poster-title">Ben Sana<br><em>İnanıyorum.</em></div><div class="poster-rule"></div><div class="poster-sub">BEYAZ PERDEDE BULUŞALIM</div></div>
+            <div class="poster-bottom">GÖSTERİM TARİHİ<br>YAKINDA</div>
+          </div>
+          <p class="poster-note">Tanıtım tasarımı · Resmî afiş yakında</p>
+        </div>
+      </section>
+      <section id="biletler" class="ticket-section" aria-labelledby="tickets-title">
+        <div class="section-top"><div><span class="number">01 / BİLET ÖN SATIŞ</span><h2>Bu hikâyede yerin olsun.</h2></div><p>Gösterim ve bilet bilgileri açıklandığında satış bağlantısını bu alanda bulabilirsin.</p></div>
+        <div class="ticket">
+          <div><span class="field-label">GÖSTERİM TARİHİ</span><span class="field-value">Yakında açıklanacak</span></div>
+          <div><span class="field-label">SİNEMA & SEANS</span><span class="field-value">Yakında açıklanacak</span></div>
+          <div><span class="field-label">ÖN SATIŞ DURUMU</span><span class="status"><span class="dot" aria-hidden="true"></span>Henüz başlamadı</span></div>
+          <button type="button" disabled aria-describedby="sale-note">Biletler yakında</button>
+        </div>
+        <p class="sale-note" id="sale-note">Bilet fiyatı ve yetkili satış bağlantısı henüz paylaşılmadı. Bu sayfada şu an rezervasyon veya ödeme alınmıyor.</p>
+      </section>
+    </main>
+    <footer class="bottom"><a href="#">BEN SANA İNANIYORUM</a><span>AYNI SALONDA, AYNI HİKÂYEDE.</span></footer>
+  </div>
 </body>
 </html>
